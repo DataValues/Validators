@@ -32,7 +32,6 @@
 		"data-values/data-values": "~0.1",
 		"data-values/interfaces": "~0.1"
 	},
-	"minimum-stability" : "dev",
 	"autoload": {
 		"files" : [
 			"Validators.php"

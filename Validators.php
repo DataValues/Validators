@@ -27,6 +27,6 @@ if ( defined( 'MEDIAWIKI' ) ) {
 			'The Wikidata team',
 		),
 		'url' => 'https://github.com/DataValues/Validators',
-		'description' => 'Numerical value objects, parsers and formatters',
+		'description' => 'Contains common ValueValidator implementations',
 	);
 }
