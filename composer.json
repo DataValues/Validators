@@ -1,7 +1,7 @@
 {
 	"name": "data-values/validators",
 	"type": "library",
-	"description": "",
+	"description": "Common ValueValidator implementations",
 	"keywords": [
 		"datavalues",
 		"valueparsers",
