@@ -15,13 +15,13 @@ if ( defined( 'DATAVALUES_VALIDATORS_VERSION' ) ) {
 	return 1;
 }
 
-define( 'DATAVALUES_VALIDATORS_VERSION', '0.1 beta' );
+define( 'DATAVALUES_VALIDATORS_VERSION', '0.1' );
 
 if ( defined( 'MEDIAWIKI' ) ) {
 	$GLOBALS['wgExtensionCredits']['datavalues'][] = array(
 		'path' => __DIR__,
-		'name' => 'DataValues Number',
-		'version' => DATAVALUES_NUMBER_VERSION,
+		'name' => 'DataValues Validators',
+		'version' => DATAVALUES_VALIDATORS_VERSION,
 		'author' => array(
 			'[https://www.mediawiki.org/wiki/User:Jeroen_De_Dauw Jeroen De Dauw]',
 			'The Wikidata team',
