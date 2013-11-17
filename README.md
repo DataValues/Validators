@@ -1,5 +1,6 @@
 # DataValues Validators
 
+DataValues Validators is a small library that contains common ValueValidator implementations.
 
 It is part of the [DataValues set of libraries](https://github.com/DataValues).
 
