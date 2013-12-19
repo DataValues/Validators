@@ -5,7 +5,8 @@ DataValues Validators is a small library that contains common ValueValidator imp
 It is part of the [DataValues set of libraries](https://github.com/DataValues).
 
 [![Build Status](https://secure.travis-ci.org/DataValues/Validators.png?branch=master)](http://travis-ci.org/DataValues/Validators)
-[![Coverage Status](https://coveralls.io/repos/DataValues/Validators/badge.png)](https://coveralls.io/r/DataValues/Validators)
+[![Code Coverage](https://scrutinizer-ci.com/g/DataValues/Validators/badges/coverage.png?s=677e53b2fab73a0bfad4aabe3f229f2f9d287a00)](https://scrutinizer-ci.com/g/DataValues/Validators/)
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/DataValues/Validators/badges/quality-score.png?s=6e5e7ac8557b7177926e89e39387e73f0bf87fe3)](https://scrutinizer-ci.com/g/DataValues/Validators/)
 
 On [Packagist](https://packagist.org/packages/data-values/validators):
 [![Latest Stable Version](https://poser.pugx.org/data-values/validators/version.png)](https://packagist.org/packages/data-values/validators)
