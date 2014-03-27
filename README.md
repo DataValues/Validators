@@ -52,6 +52,11 @@ It is based upon and contains a lot of code written by [Jeroen De Dauw]
 
 ## Release notes
 
+### 1.0.1 (2014-03-27)
+
+* Changed autoloading from PSR-0 to PSR-4
+* Added tests for DimensionValidator
+
 ### 0.1 (2013-11-17)
 
 Initial release with these features:
@@ -67,3 +72,4 @@ Initial release with these features:
 
 * [DataValues Validators on Packagist](https://packagist.org/packages/data-values/validators)
 * [DataValues Validators on TravisCI](https://travis-ci.org/DataValues/Validators)
+* [DataValues Validators on ScrutinizerCI](https://scrutinizer-ci.com/g/DataValues/Validators/)

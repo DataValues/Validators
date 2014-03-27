@@ -15,7 +15,7 @@ if ( defined( 'DATAVALUES_VALIDATORS_VERSION' ) ) {
 	return 1;
 }
 
-define( 'DATAVALUES_VALIDATORS_VERSION', '0.1' );
+define( 'DATAVALUES_VALIDATORS_VERSION', '0.1.1' );
 
 if ( defined( 'MEDIAWIKI' ) ) {
 	$GLOBALS['wgExtensionCredits']['datavalues'][] = array(
