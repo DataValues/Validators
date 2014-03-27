@@ -36,7 +36,7 @@
 		"files" : [
 			"Validators.php"
 		],
-		"psr-0": {
+		"psr-4": {
 			"ValueValidators\\": "src"
 		}
 	}
