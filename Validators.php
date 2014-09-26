@@ -28,5 +28,6 @@ if ( defined( 'MEDIAWIKI' ) ) {
 		),
 		'url' => 'https://github.com/DataValues/Validators',
 		'description' => 'Contains common ValueValidator implementations',
+		'license-name' => 'GPL-2.0+'
 	);
 }
