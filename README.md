@@ -53,7 +53,11 @@ It is based upon and contains a lot of code written by [Jeroen De Dauw]
 
 ## Release notes
 
-### 1.0.1 (2014-03-27)
+### 0.1.2 (2014-10-09)
+
+* Made component installable with DataValues 1.x
+
+### 0.1.1 (2014-03-27)
 
 * Changed autoloading from PSR-0 to PSR-4
 * Added tests for DimensionValidator
