@@ -140,7 +140,7 @@ class DimensionValidator extends ValueValidatorObject {
 			$lowerBound = $this->lowerBound;
 		}
 
-		$value = (float)preg_replace( '/[^0-9]/', '', $value );
+		$value = (float)preg_replace( '/\D+/', '', $value );
 
 		$rangeValidator = new RangeValidator();
 		$rangeValidator->setRange( $lowerBound, $upperBound );
