@@ -62,7 +62,7 @@ It is based upon and contains a lot of code written by [Jeroen De Dauw]
 * Changed autoloading from PSR-0 to PSR-4
 * Added tests for DimensionValidator
 
-### 0.1 (2013-11-17)
+### 0.1.0 (2013-11-17)
 
 Initial release with these features:
 
