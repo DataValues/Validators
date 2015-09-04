@@ -4,8 +4,6 @@
 	"description": "Common ValueValidator implementations",
 	"keywords": [
 		"datavalues",
-		"valueparsers",
-		"valueformatters",
 		"wikidata",
 		"validators",
 		"validation"
