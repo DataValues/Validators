@@ -2,6 +2,7 @@
 
 namespace ValueValidators\Tests;
 
+use PHPUnit\Framework\TestCase;
 use ValueValidators\DimensionValidator;
 
 /**
@@ -10,10 +11,10 @@ use ValueValidators\DimensionValidator;
  * @group ValueValidators
  * @group DataValueExtensions
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
-class DimensionValidatorTest extends \PHPUnit_Framework_TestCase {
+class DimensionValidatorTest extends TestCase {
 
 	/**
 	 * @var DimensionValidator

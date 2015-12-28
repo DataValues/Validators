@@ -2,7 +2,7 @@
 
 namespace ValueValidators\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use ValueValidators\Error;
 use ValueValidators\ListValidator;
 
@@ -12,10 +12,10 @@ use ValueValidators\ListValidator;
  * @group ValueValidators
  * @group DataValueExtensions
  *
- * @licence GNU GPL v2+
- * @author Thiemo Mättig
+ * @license GPL-2.0-or-later
+ * @author Thiemo Kreuz
  */
-class ListValidatorTest extends PHPUnit_Framework_TestCase {
+class ListValidatorTest extends TestCase {
 
 	/**
 	 * @dataProvider invalidRangeProvider
