@@ -20,7 +20,7 @@ class DimensionValidatorTest extends \PHPUnit_Framework_TestCase {
 	 */
 	private $validator;
 
-	public function setUp() {
+	protected function setUp() {
 		$this->validator = new DimensionValidator();
 	}
 
