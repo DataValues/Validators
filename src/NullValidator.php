@@ -19,7 +19,7 @@ class NullValidator implements ValueValidator {
 	 *
 	 * @param mixed $value
 	 *
-	 * @return Result
+	 * @return Result Always successfull.
 	 */
 	public function validate( $value ) {
 		return Result::newSuccess();
