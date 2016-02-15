@@ -51,6 +51,7 @@ class TitleValidator extends ValueValidatorObject {
 	 * @see ValueValidator::setOptions
 	 *
 	 * @since 0.1
+	 * @deprecated since 0.1.3, remove when support for DataValues Interfaces 0.2 is dropped
 	 *
 	 * @param array $options
 	 */
