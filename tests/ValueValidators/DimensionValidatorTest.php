@@ -50,6 +50,10 @@ class DimensionValidatorTest extends \PHPUnit_Framework_TestCase {
 		$this->assertIsValid( '100' );
 	}
 
+	public function testUsingDefaultSettings_trailingNewlineIsInvalid() {
+		$this->assertIsNotValid( "100\n" );
+	}
+
 	public function testGivenUpperBound_valueUnderIsValid() {
 		$this->validator->setUpperBound( 100 );
 		$this->assertIsValid( '99' );

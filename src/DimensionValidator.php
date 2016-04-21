@@ -126,7 +126,7 @@ class DimensionValidator extends ValueValidatorObject {
 			return;
 		}
 
-		if ( !preg_match( '/^\d+(\.\d+)?(' . implode( '|', $this->allowedUnits ) . ')$/', $value ) ) {
+		if ( !preg_match( '/^\d+(\.\d+)?(' . implode( '|', $this->allowedUnits ) . ')\z/', $value ) ) {
 			$this->addErrorMessage( 'Not a valid dimension value' );
 			return;
 		}
