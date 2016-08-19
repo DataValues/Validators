@@ -141,8 +141,7 @@ class RangeValidator extends ValueValidatorObject {
 		if ( array_key_exists( 'range', $options ) ) {
 			if ( is_array( $options['range'] ) && count( $options['range'] ) == 2 ) {
 				$this->setRange( $options['range'][0], $options['range'][1] );
-			}
-			else {
+			} else {
 				throw new Exception( 'The range argument must be an array with two elements' );
 			}
 		}
@@ -150,8 +149,7 @@ class RangeValidator extends ValueValidatorObject {
 		if ( array_key_exists( 'withinrange', $options ) ) {
 			if ( is_array( $options['withinrange'] ) && count( $options['withinrange'] ) == 2 ) {
 				$this->setWithinRange( $options['withinrange'][0], $options['withinrange'][1] );
-			}
-			else {
+			} else {
 				throw new Exception( 'The withinrange argument must be an array with two elements' );
 			}
 		}
