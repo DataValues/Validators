@@ -134,8 +134,7 @@ class DimensionValidator extends ValueValidatorObject {
 		if ( strpos( $value, '%' ) !== false ) {
 			$upperBound = $this->maxPercentage;
 			$lowerBound = $this->minPercentage;
-		}
-		else {
+		} else {
 			$upperBound = $this->upperBound;
 			$lowerBound = $this->lowerBound;
 		}

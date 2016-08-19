@@ -30,6 +30,9 @@
 		"data-values/data-values": "~1.0|~0.1",
 		"data-values/interfaces": "~0.2.0|~0.1.0"
 	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "~0.5"
+	},
 	"autoload": {
 		"files" : [
 			"Validators.php"
@@ -42,5 +45,10 @@
 		"branch-alias": {
 			"dev-master": "0.1.x-dev"
 		}
+	},
+	"scripts": {
+		"phpcs": [
+			"vendor/bin/phpcs src/* tests/* --standard=phpcs.xml -sp"
+		]
 	}
 }

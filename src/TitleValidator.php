@@ -41,8 +41,7 @@ class TitleValidator extends ValueValidatorObject {
 		 */
 		if ( !$value instanceof Title ) {
 			$this->addErrorMessage( 'Not a title' );
-		}
-		elseif( $this->hasToExist && !$value->exists() ) {
+		} elseif ( $this->hasToExist && !$value->exists() ) {
 			$this->addErrorMessage( 'Title does not exist' );
 		}
 	}

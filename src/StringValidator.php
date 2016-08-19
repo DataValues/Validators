@@ -32,8 +32,7 @@ class StringValidator extends ValueValidatorObject {
 		if ( array_key_exists( 'length', $this->options ) ) {
 			$lowerBound = $this->options['length'];
 			$upperBound = $this->options['length'];
-		}
-		else {
+		} else {
 			if ( array_key_exists( 'minlength', $this->options ) ) {
 				$lowerBound = $this->options['minlength'];
 			}
