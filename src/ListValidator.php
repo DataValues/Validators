@@ -30,26 +30,22 @@ class ListValidator extends ValueValidatorObject {
 			return;
 		}
 
-		$validator = new RangeValidator();
+		$options = array();
 
 		if ( array_key_exists( 'elementcount', $this->options ) ) {
-			$range = $this->options['elementcount'];
-
-			if ( !is_array( $range ) || count( $range ) !== 2 ) {
-				throw new Exception( 'The elementcount option must be an array with two elements' );
-			}
-
-			$validator->setRange( $range[0], $range[1] );
+			$options['range'] = $this->options['elementcount'];
 		}
 
-		// min- and maxelements options are allowed to overwrite the elementcount option!
 		if ( array_key_exists( 'minelements', $this->options ) ) {
-			$validator->setLowerBound( $this->options['minelements'] );
-		}
-		if ( array_key_exists( 'maxelements', $this->options ) ) {
-			$validator->setUpperBound( $this->options['maxelements'] );
+			$options['lowerbound'] = $this->options['minelements'];
 		}
 
+		if ( array_key_exists( 'maxelements', $this->options ) ) {
+			$options['upperbound'] = $this->options['maxelements'];
+		}
+
+		$validator = new RangeValidator();
+		$validator->setOptions( $options );
 		$this->runSubValidator( count( $value ), $validator, 'length' );
 	}
 
