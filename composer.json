@@ -26,12 +26,13 @@
 		"irc": "irc://irc.freenode.net/wikidata"
 	},
 	"require": {
-		"php": ">=5.3.0",
-		"data-values/data-values": "~1.0|~0.1",
+		"php": ">=5.5.9",
+		"data-values/data-values": "^2.1.1|~1.0|~0.1",
 		"data-values/interfaces": "~0.2.0|~0.1.0"
 	},
 	"require-dev": {
-		"mediawiki/mediawiki-codesniffer": "~0.5"
+		"mediawiki/mediawiki-codesniffer": "^0.7",
+		"phpunit/phpunit": "~4.8"
 	},
 	"autoload": {
 		"files" : [
@@ -47,8 +48,10 @@
 		}
 	},
 	"scripts": {
-		"phpcs": [
-			"vendor/bin/phpcs src/* tests/* --standard=phpcs.xml -sp"
+		"test": [
+			"composer validate --no-interaction",
+			"phpcs -p -s",
+			"phpunit"
 		]
 	}
 }
