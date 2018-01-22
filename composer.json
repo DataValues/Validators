@@ -9,7 +9,7 @@
 		"validation"
 	],
 	"homepage": "https://github.com/DataValues/Validators",
-	"license": "GPL-2.0+",
+	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
 			"name": "Jeroen De Dauw",
