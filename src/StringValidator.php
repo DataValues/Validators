@@ -48,7 +48,6 @@ class StringValidator extends ValueValidatorObject {
 			$this->runSubValidator( strlen( $value ), $rangeValidator, 'length' );
 		}
 
-		// TODO: this needs tests
 		if ( array_key_exists( 'regex', $this->options ) ) {
 			$match = preg_match( $this->options['regex'], $value );
 
