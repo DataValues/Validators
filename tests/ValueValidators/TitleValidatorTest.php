@@ -2,7 +2,7 @@
 
 namespace ValueValidators\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use ValueValidators\Error;
 use ValueValidators\TitleValidator;
 
@@ -12,10 +12,10 @@ use ValueValidators\TitleValidator;
  * @group ValueValidators
  * @group DataValueExtensions
  *
- * @licence GNU GPL v2+
- * @author Thiemo Mättig
+ * @license GPL-2.0-or-later
+ * @author Thiemo Kreuz
  */
-class TitleValidatorTest extends PHPUnit_Framework_TestCase {
+class TitleValidatorTest extends TestCase {
 
 	/**
 	 * @dataProvider titleProvider

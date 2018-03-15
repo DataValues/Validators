@@ -6,7 +6,7 @@
  * @since 0.1
  * @codeCoverageIgnore
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 
@@ -28,6 +28,6 @@ if ( defined( 'MEDIAWIKI' ) ) {
 		),
 		'url' => 'https://github.com/DataValues/Validators',
 		'description' => 'Contains common ValueValidator implementations',
-		'license-name' => 'GPL-2.0+'
+		'license-name' => 'GPL-2.0-or-later'
 	);
 }
