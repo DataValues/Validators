@@ -52,6 +52,11 @@ for the [Maps](https://github.com/JeroenDeDauw/Maps) and
 
 ## Release notes
 
+### 0.1.3 (2018-08-02)
+
+* Made component installable with DataValues 2.x
+* Removed MediaWiki integration
+
 ### 0.1.2 (2014-10-09)
 
 * Made component installable with DataValues 1.x

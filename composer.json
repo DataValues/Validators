@@ -35,9 +35,6 @@
 		"wikibase/wikibase-codesniffer": "0.4.0"
 	},
 	"autoload": {
-		"files" : [
-			"Validators.php"
-		],
 		"psr-4": {
 			"ValueValidators\\": "src"
 		}
