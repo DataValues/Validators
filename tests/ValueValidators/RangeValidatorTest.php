@@ -38,7 +38,11 @@ class RangeValidatorTest extends TestCase {
 	/**
 	 * @dataProvider withinBoundsProvider
 	 */
-	public function testNumberWithinRange_WhenSetWithIndividualSetters( $number, $lowerBound, $upperBound ) {
+	public function testNumberWithinRange_WhenSetWithIndividualSetters(
+		$number,
+		$lowerBound,
+		$upperBound
+	) {
 		$rangeValidator = new RangeValidator();
 		$rangeValidator->setLowerBound( $lowerBound );
 		$rangeValidator->setUpperBound( $upperBound );

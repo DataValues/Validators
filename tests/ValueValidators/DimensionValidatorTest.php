@@ -21,7 +21,7 @@ class DimensionValidatorTest extends TestCase {
 	 */
 	private $validator;
 
-	protected function setUp() {
+	protected function setUp(): void {
 		$this->validator = new DimensionValidator();
 	}
 
