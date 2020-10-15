@@ -110,8 +110,8 @@ class RangeValidator extends ValueValidatorObject {
 	 * @return boolean
 	 */
 	protected function validateBounds( $value, $upperBound = null, $lowerBound = null ) {
-		$upperBound = is_null( $upperBound ) ? $this->upperBound : $upperBound;
-		$lowerBound = is_null( $lowerBound ) ? $this->lowerBound : $lowerBound;
+		$upperBound = $upperBound ?? $this->upperBound;
+		$lowerBound = $lowerBound ?? $this->lowerBound;
 
 		$smallEnough = $upperBound === false || $value <= $upperBound;
 		$bigEnough = $lowerBound === false || $value >= $lowerBound;

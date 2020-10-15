@@ -57,7 +57,9 @@ class StringValidator extends ValueValidatorObject {
 			if ( $match === false ) {
 				throw new Exception( 'The regex argument must be a valid Perl regular expression.' );
 			} elseif ( $match === 0 ) {
-				$this->addErrorMessage( 'String does not match the regular expression ' . $this->options['regex'] );
+				$this->addErrorMessage(
+					'String does not match the regular expression ' . $this->options['regex']
+				);
 			}
 		}
 	}
