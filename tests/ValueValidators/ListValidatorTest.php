@@ -23,7 +23,7 @@ class ListValidatorTest extends TestCase {
 	public function testInvalidRange( $range ) {
 		$validator = new ListValidator();
 		$validator->setOptions( [ 'elementcount' => $range ] );
-		$this->setExpectedException( 'Exception' );
+		$this->expectException( 'Exception' );
 		$validator->validate( [] );
 	}
 
