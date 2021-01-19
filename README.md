@@ -4,7 +4,6 @@ DataValues Validators is a small library that contains common ValueValidator imp
 
 It is part of the [DataValues set of libraries](https://github.com/DataValues).
 
-[![Build Status](https://secure.travis-ci.org/DataValues/Validators.png?branch=master)](http://travis-ci.org/DataValues/Validators)
 [![Code Coverage](https://scrutinizer-ci.com/g/DataValues/Validators/badges/coverage.png?s=677e53b2fab73a0bfad4aabe3f229f2f9d287a00)](https://scrutinizer-ci.com/g/DataValues/Validators/)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/DataValues/Validators/badges/quality-score.png?s=6e5e7ac8557b7177926e89e39387e73f0bf87fe3)](https://scrutinizer-ci.com/g/DataValues/Validators/)
 
@@ -39,7 +38,7 @@ Then take care of autoloading the classes defined in the src directory.
 
 This library comes with a set up PHPUnit tests that cover all non-trivial code. You can run these
 tests using the PHPUnit configuration file found in the root directory. The tests can also be run
-via TravisCI, as a TravisCI configuration file is also provided in the root directory.
+via Github Actions.
 
 ## Authors
 
@@ -80,5 +79,4 @@ Initial release with these features:
 ## Links
 
 * [DataValues Validators on Packagist](https://packagist.org/packages/data-values/validators)
-* [DataValues Validators on TravisCI](https://travis-ci.org/DataValues/Validators)
 * [DataValues Validators on ScrutinizerCI](https://scrutinizer-ci.com/g/DataValues/Validators/)
