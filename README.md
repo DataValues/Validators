@@ -51,6 +51,10 @@ for the [Maps](https://github.com/JeroenDeDauw/Maps) and
 
 ## Release notes
 
+### 1.0.0 (2021-01-22)
+
+
+
 ### 0.1.3 (2018-08-02)
 
 * Made component installable with DataValues 2.x
