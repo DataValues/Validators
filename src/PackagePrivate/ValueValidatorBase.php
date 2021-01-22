@@ -9,20 +9,13 @@ use ValueValidators\Result;
 use ValueValidators\ValueValidator;
 
 /**
- * ValueValidator that holds base validation functions for any type of object.
- *
- * @since 0.1
- *
- * @license GPL-2.0+
- * @author Jeroen De Dauw < jeroendedauw@gmail.com >
+ * @internal
  */
 abstract class ValueValidatorBase implements ValueValidator {
 
 	/**
 	 * A list of allowed values. This means the parameters value(s) must be in the list
 	 * during validation. False for no restriction.
-	 *
-	 * @since 0.1
 	 *
 	 * @var array|false
 	 */
@@ -32,22 +25,16 @@ abstract class ValueValidatorBase implements ValueValidator {
 	 * A list of prohibited values. This means the parameters value(s) must
 	 * not be in the list during validation. False for no restriction.
 	 *
-	 * @since 0.1
-	 *
 	 * @var array|false
 	 */
 	protected $prohibitedValues = false;
 
 	/**
-	 * @since 0.1
-	 *
 	 * @var array
 	 */
 	protected $options = [];
 
 	/**
-	 * @since 0.1
-	 *
 	 * @var Error[]
 	 */
 	protected $errors = [];
@@ -78,8 +65,6 @@ abstract class ValueValidatorBase implements ValueValidator {
 	/**
 	 * Checks the value against the allowed values and prohibited values lists in case they are set.
 	 *
-	 * @since 0.1
-	 *
 	 * @param mixed $value
 	 */
 	protected function valueIsAllowed( $value ) {
@@ -94,8 +79,6 @@ abstract class ValueValidatorBase implements ValueValidator {
 
 	/**
 	 * @see ValueValidator::validate
-	 *
-	 * @since 0.1
 	 *
 	 * @param mixed $value
 	 */
@@ -124,8 +107,6 @@ abstract class ValueValidatorBase implements ValueValidator {
 	/**
 	 * Registers an error message.
 	 *
-	 * @since 0.1
-	 *
 	 * @param string $errorMessage
 	 */
 	protected function addErrorMessage( $errorMessage ) {
@@ -135,8 +116,6 @@ abstract class ValueValidatorBase implements ValueValidator {
 	/**
 	 * Registers an error.
 	 *
-	 * @since 0.1
-	 *
 	 * @param Error $error
 	 */
 	protected function addError( Error $error ) {
@@ -145,8 +124,6 @@ abstract class ValueValidatorBase implements ValueValidator {
 
 	/**
 	 * Registers a list of errors.
-	 *
-	 * @since 0.1
 	 *
 	 * @param Error[] $errors
 	 */
@@ -159,8 +136,6 @@ abstract class ValueValidatorBase implements ValueValidator {
 	 * Options of $this can be mapped to those of the passed ValueValidator using
 	 * the $optionMap parameter in which keys are source names and values are target
 	 * names.
-	 *
-	 * @since 0.1
 	 *
 	 * @param mixed $value
 	 * @param ValueValidator $validator
@@ -196,8 +171,6 @@ abstract class ValueValidatorBase implements ValueValidator {
 	/**
 	 * If the "values" and "excluding" arguments should be held into account.
 	 *
-	 * @since 0.1
-	 *
 	 * @return bool
 	 */
 	protected function enableWhitelistRestrictions() {
@@ -209,8 +182,6 @@ abstract class ValueValidatorBase implements ValueValidator {
 	 *
 	 * TODO: think about how to access set options in general and if we want to have
 	 * whitelist and baclklist values in the validator objects to begin with.
-	 *
-	 * @since 0.1
 	 *
 	 * @return array|bool false
 	 */
