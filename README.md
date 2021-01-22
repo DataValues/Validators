@@ -54,6 +54,7 @@ for the [Maps](https://github.com/JeroenDeDauw/Maps) and
 ### 1.0.0 (2021-01-22)
 
 * Added compatibility with `data-values/data-values` 3.x
+* Added compatibility with `data-values/interfaces` 1.x
 
 ### 0.1.3 (2018-08-02)
 

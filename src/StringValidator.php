@@ -3,6 +3,7 @@
 namespace ValueValidators;
 
 use Exception;
+use ValueValidators\PackagePrivate\ValueValidatorBase;
 
 /**
  * ValueValidator that validates a string value.
@@ -12,10 +13,10 @@ use Exception;
  * @license GPL-2.0-or-later
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
-class StringValidator extends ValueValidatorObject {
+class StringValidator extends ValueValidatorBase {
 
 	/**
-	 * @see ValueValidatorObject::doValidation
+	 * @see ValueValidatorBase::doValidation
 	 *
 	 * @since 0.1
 	 *

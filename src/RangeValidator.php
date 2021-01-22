@@ -3,6 +3,7 @@
 namespace ValueValidators;
 
 use Exception;
+use ValueValidators\PackagePrivate\ValueValidatorBase;
 
 /**
  * ValueValidator that validates if a numeric value is within a certain range.
@@ -12,7 +13,7 @@ use Exception;
  * @license GPL-2.0-or-later
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
-class RangeValidator extends ValueValidatorObject {
+class RangeValidator extends ValueValidatorBase {
 
 	/**
 	 * Lower bound of the range (included). Either a number or false, for no lower limit.
@@ -82,7 +83,7 @@ class RangeValidator extends ValueValidatorObject {
 	}
 
 	/**
-	 * @see ValueValidatorObject::doValidation
+	 * @see ValueValidatorBase::doValidation
 	 *
 	 * @since 0.1
 	 *
