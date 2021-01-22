@@ -1,8 +1,11 @@
 <?php
 
+declare( strict_types = 1 );
+
 namespace ValueValidators;
 
 use Title;
+use ValueValidators\PackagePrivate\ValueValidatorBase;
 
 /**
  * ValueValidator that validates a Title object.
@@ -12,7 +15,7 @@ use Title;
  * @license GPL-2.0-or-later
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
-class TitleValidator extends ValueValidatorObject {
+class TitleValidator extends ValueValidatorBase {
 
 	/**
 	 * @since 0.1
@@ -31,7 +34,7 @@ class TitleValidator extends ValueValidatorObject {
 	}
 
 	/**
-	 * @see ValueValidatorObject::doValidation
+	 * @see ValueValidatorBase::doValidation
 	 *
 	 * @since 0.1
 	 *

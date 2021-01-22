@@ -1,8 +1,11 @@
 <?php
 
+declare( strict_types = 1 );
+
 namespace ValueValidators;
 
 use Exception;
+use ValueValidators\PackagePrivate\ValueValidatorBase;
 
 /**
  * ValueValidator that validates a list of values.
@@ -13,10 +16,10 @@ use Exception;
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  * @author Thiemo Kreuz
  */
-class ListValidator extends ValueValidatorObject {
+class ListValidator extends ValueValidatorBase {
 
 	/**
-	 * @see ValueValidatorObject::doValidation
+	 * @see ValueValidatorBase::doValidation
 	 *
 	 * @since 0.1
 	 *
@@ -50,7 +53,7 @@ class ListValidator extends ValueValidatorObject {
 	}
 
 	/**
-	 * @see ValueValidatorObject::enableWhitelistRestrictions
+	 * @see ValueValidatorBase::enableWhitelistRestrictions
 	 *
 	 * @since 0.1
 	 *

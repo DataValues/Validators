@@ -1,8 +1,11 @@
 <?php
 
+declare( strict_types = 1 );
+
 namespace ValueValidators;
 
 use Exception;
+use ValueValidators\PackagePrivate\ValueValidatorBase;
 
 /**
  * ValueValidator that validates a dimension value.
@@ -12,7 +15,7 @@ use Exception;
  * @license GPL-2.0-or-later
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
-class DimensionValidator extends ValueValidatorObject {
+class DimensionValidator extends ValueValidatorBase {
 
 	/**
 	 * @since 0.1
@@ -103,7 +106,7 @@ class DimensionValidator extends ValueValidatorObject {
 	}
 
 	/**
-	 * @see ValueValidatorObject::doValidation
+	 * @see ValueValidatorBase::doValidation
 	 *
 	 * @since 0.1
 	 *
